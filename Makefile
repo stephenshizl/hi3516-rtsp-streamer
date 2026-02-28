@@ -41,7 +41,7 @@ CXXFLAGS = $(CFLAGS) -std=c++11
 LDFLAGS = $(COMMON_LDFLAGS) $(MPP_LDFLAGS) $(LIVE555_LDFLAGS) \
     -lstdc++
 
-.PHONY: all clean install
+.PHONY: all clean install host
 
 all: $(OUTDIR)/$(TARGET)
 
@@ -68,3 +68,9 @@ install: all
 	install -m 755 $(OUTDIR)/$(TARGET) $(DESTDIR)/usr/bin/$(TARGET)
 	install -d $(DESTDIR)/etc
 	install -m 644 src/config/ipcamera.conf $(DESTDIR)/etc/ipcamera.conf
+
+host:
+	$(MAKE) CC=gcc CXX=g++ CROSS_COMPILE="" TARGET_ABI="" \
+	    MPP_CFLAGS="" MPP_LDFLAGS="" \
+	    LIVE555_CFLAGS="-I$(CURDIR)/include/live555" \
+	    LIVE555_LDFLAGS=""

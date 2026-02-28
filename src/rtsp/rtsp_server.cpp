@@ -55,7 +55,10 @@ extern "C" HI_S32 rtsp_server_init(const NETWORK_CONF_S *pstNetConf)
         return HI_FAILURE;
     }
 
-    memset(&g_rtspCtx, 0, sizeof(g_rtspCtx));
+    g_rtspCtx.streams.clear();
+    g_rtspCtx.tid         = 0;
+    g_rtspCtx.running     = false;
+    g_rtspCtx.initialized = false;
     pthread_mutex_init(&g_rtspCtx.mutex, nullptr);
     g_rtspCtx.port        = pstNetConf->u16RtspPort ? pstNetConf->u16RtspPort : 554;
 
