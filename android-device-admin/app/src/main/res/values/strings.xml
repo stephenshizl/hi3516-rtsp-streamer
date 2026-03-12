@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hi3516 设备管理员</string>
+    
+    <!-- 设备管理员状态 -->
+    <string name="device_admin_label">Hi3516 设备管理员</string>
+    <string name="device_admin_description">允许应用管理设备安全和策略设置</string>
+    <string name="device_admin_explanation">激活设备管理员后，您可以：\n\n• 锁定设备\n• 设置密码策略\n• 限制相机使用\n• 远程擦除数据\n• 监控安全事件</string>
+    <string name="device_admin_active">设备管理员已激活</string>
+    <string name="device_admin_inactive">设备管理员未激活</string>
+    <string name="checking_status">检查状态中…</string>
+    
+    <!-- 按钮文本 -->
+    <string name="activate_device_admin">激活设备管理员</string>
+    <string name="deactivate_device_admin">停用设备管理员</string>
+    <string name="lock_device">锁定设备</string>
+    <string name="wipe_data">擦除数据</string>
+    <string name="set_password_policy">设置密码策略</string>
+    <string name="disable_camera">禁用相机</string>
+    <string name="enable_camera">启用相机</string>
+    <string name="set_lock_timeout">设置锁屏超时</string>
+    
+    <!-- 分类标题 -->
+    <string name="device_controls">设备控制</string>
+    <string name="data_management">数据管理</string>
+    
+    <!-- 状态消息 -->
+    <string name="device_locked">设备已锁定</string>
+    <string name="device_admin_deactivated">设备管理员已停用</string>
+    <string name="data_wiping">正在擦除数据…</string>
+    <string name="password_policy_set">密码策略已设置：数字密码，最少6位</string>
+    <string name="camera_disabled">相机已禁用</string>
+    <string name="camera_enabled">相机已启用</string>
+    <string name="lock_timeout_set">锁屏超时已设置为1分钟</string>
+    
+    <!-- 警告 -->
+    <string name="warning_text">警告：擦除数据将删除设备上的所有数据，操作无法撤销！</string>
+</resources>
