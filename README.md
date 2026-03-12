@@ -102,3 +102,16 @@ hi3516-rtsp-streamer/
 ## License
 
 See LICENSE file.
+
+## Android Device Admin App
+
+An Android 13 device administrator application is also provided as a companion to the Hi3516 RTSP streamer. See [android-device-admin/README.md](android-device-admin/README.md) for details.
+
+This Android app provides:
+- Device security management for Hi3516-based Android devices
+- Remote device locking and data wipe capabilities
+- Password policy enforcement
+- Camera control and monitoring
+- Security event notifications
+
+The Android app is independent of the C/C++ RTSP streamer and can be used separately on Android 13+ devices.
